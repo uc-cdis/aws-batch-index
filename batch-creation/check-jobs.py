@@ -1,9 +1,9 @@
 import boto3
 
-client = boto3.client('batch')
+client = boto3.client("batch")
 
 response = client.list_jobs(
-    jobQueue='test',
+    jobQueue="test",
 )
 
 print(response)
